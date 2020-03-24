@@ -1,0 +1,16 @@
+database:
+  driver: mysql
+  connection: root:1234@tcp(127.0.0.1:3306)/hublabs_order?charset=utf8&parseTime=True&loc=UTC
+eventMessageBroker:
+  kafka:
+    brokers:
+      - 127.0.0.1:9092
+    topic: hublabs-order
+services:
+  stockApiUrl:
+  benefitApiUrl:
+  productApiUrl:
+  calculatorApiUrl:
+  placeManagementApiUrl:
+appenv: dev
+serviceName: order-api
